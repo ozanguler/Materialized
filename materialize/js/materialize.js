@@ -14,7 +14,9 @@ if (typeof(jQuery) === 'undefined') {
     jQuery = $;
   }
 }
-;/*
+;
+
+/*
  * jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/
  *
  * Uses the built in easing capabilities added In jQuery 1.1
@@ -520,7 +522,9 @@ if (jQuery) {
   };
 
   $(document).ready(function(){
-  	$(".dropdown-button").dropdown(){ hover: false };
+  	$(".dropdown-button").dropdown(function(){
+  		hover: false
+  	});
     $('.collapsible').collapsible();
   });
 }( jQuery ));;(function ($) {
