@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta name="content-type" content="text/html charset=utf-8" />  
+      <meta http-equiv="content-type" content="text/html charset=utf-8" />
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <div>
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+          <li><a href="#!">one</a></li>
+          <li><a href="#!">two</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">three</a></li>
+        </ul>
+        <nav style="background-color: #ff8000">
+          <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">Where's My Professor?</a>
+            <ul class="right hide-on-med-and-down">
+              <li>
+                <input style="color: #ffffff" id="search" type="search" required>
+              </li>
+              <li>
+                <label for="search"><i style="color: #ffffff" class="material-icons right">search</i></label>
+              </li>
+              <li><a href="MakeAppointment.html">Make Appointment</a></li>
+              <li><a href="badges.html">Components</a></li>
+
+      <!-- Dropdown Trigger -->
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+   
+      <ul id="slide-out" class="side-nav">
+        <li><div class="userView">
+      </div>
+      <a><span style="color: #ff8000">Kemal Işık</span></a>
+      <a><span style="color: #ff8000">20120601026</span></a>
+    </div></li>
+    <li><a style="color: #ff8000">Date and time:</a></li>
+    <li><input type="datetime" name="date" /></li>
+    <li><a style="color: #ff8000">Instructor ID:</a></li>
+    <li><input style="text" name="instructorId"/></li>
+    <li><div class="divider"></div></li>
+    <li style="text-align: center"><button onclick="submit()">Submit</button></li>
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse" style="position: fixed"><i class="material-icons">menu</i></a>
+
+
+    <div style="text-align: center">      
+      <h3 style="text-align: center">Kemal Işık</h3>
+      <img src="img/kemal.png" style="text-align: center"/>
+      <br>
+      <button onclick="programms(1)">Cem Evrendilek</button>
+      <br>
+      <button onclick="programms(2)">Süleyman Kondakçı</button>
+       
+    </div>
+
+    <br>
+
+    <div style="text-align: center">
+      <img id="cemev" src="img/cemev.png" style="display: none;">
+      <br>
+      <img id="kondakci" src="img/kondakci.png" style="display: none;">
+    </div>
+
+
+      <footer class="page-footer" style="background-color: #ff8000; position: fixed; bottom: 0px; left: 0px; right: 0px;">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h6 class="white-text">Where's My Professor is a final project which is currently developing by Ozan, Uygar, Rüya and Kemal</h6>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Helpful Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="https://odin-oasis.izmirekonomi.edu.tr/oasis/index.php">Oasis</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://ieu.blackboard.com/">Blackboard</a></li>
+                  <li><a class="grey-text text-lighten-3" href="http://www.ieu.edu.tr/tr">IUE</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2016 WhereIsMyProfessor, All Rights Reserved
+            </div>
+          </div>
+        </footer>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function () {
+          // body...
+           $(".button-collapse").sideNav();
+        });
+
+      </script>
+
+      <script type="text/javascript">
+        function programms(x)
+        {
+          if(x==1)
+          {
+            var c = document.getElementById("cemev");
+            c.style.display = "inline";
+            var k = document.getElementById("kondakci");
+            k.style.display = "none";
+          }
+          else if(x==2)
+          {
+            var k = document.getElementById("kondakci");
+            k.style.display = "inline";
+            var c = document.getElementById("cemev");
+            c.style.display = "none"; 
+          }
+        }
+      </script>
+    </body>
+  </html>
