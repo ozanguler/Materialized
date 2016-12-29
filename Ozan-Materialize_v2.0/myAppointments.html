@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta name="content-type" content="text/html charset=utf-8" />  
+      <meta http-equiv="content-type" content="text/html charset=utf-8" />
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper" style="background-color: #ff8000">
+          <a href="index.html" class="brand-logo">Where's My Professor?</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="myAppointments.html">My Appointments</a></li>
+            <li><a href="#">Make Appointment</a></li>
+            <li><a href="#">My Schedule</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <h4 class="center" style="padding-top: 70px">Your Upcoming Appointments</h4>
+
+    <div class="row" style="padding-top:70px">
+    <table class="centered striped bordered responsive-table col s10 push-s1">
+        <thead>
+          <tr>
+              <th data-field="professorName">Professor Name</th>
+              <th data-field="date">Date</th>
+              <th data-field="hour">Hour</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Cem EVRENDİLEK</td>
+            <td>11/01/17, Wednesday</td>
+            <td>14:00 - 14:15</td>
+          </tr>
+          <tr>
+            <td>Senem Kumova METİN</td>
+            <td>12/01/17, Thursday</td>
+            <td>16:30 - 16:45</td>
+          </tr>
+          <tr>
+            <td>Coşkun ATAY</td>
+            <td>13/01/17, Friday</td>
+            <td>15:15 - 15:30</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
+  </html>
