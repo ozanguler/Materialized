@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta name="content-type" content="text/html charset=utf-8" />  
+      <meta http-equiv="content-type" content="text/html charset=utf-8" />
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+    <div class="row">
+    <div class="col s3">
+      
+       <div class="row">
+        <div class="col s12 m9">
+          <div id="situationpanel" class="card " style="background-color: #4caf50">
+            <div class="card-content white-text">
+              <span class="card-title">current situation </span>
+              <h5 id="situation" >available</h5>
+            </div>
+
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col s6">
+          <table class="bordered striped  centered responsive-table">
+            <thead>
+              <tr>
+                  <th data-field="id">Name</th>
+                  <th data-field="name">Date-Time</th>
+                  <th data-field="price">Subject</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Uygar Aydın</td>
+                <td>29.12.2016-14:15</td>
+                <td>midterm result</td>
+              </tr>
+              <tr>
+                <td>Rüya Saran</td>
+                <td>29.12.2016-14:30</td>
+                <td>Arrays</td>
+              </tr>
+              <tr>
+                <td>Ozan Güler</td>
+                <td>30.12.2016-11:00</td>
+                <td>Project Details</td>
+              </tr>
+               <tr>
+                <td>Yara Hassan</td>
+                <td>30.12.2016-11:15</td>
+                <td>midterm result</td>
+              </tr>
+               <tr>
+                <td>Kemal Işık</td>
+                <td>30.12.2016-11:30</td>
+                <td>requirement specification</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    <div class="col s3"></div>
+   </div>
+
+       
+           <div class="fixed-action-btn horizontal click-to-toggle">
+    <a class="btn-floating btn-large red">
+      <i class="material-icons">menu</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red" onclick="redbutton();" ><i class="material-icons"></i></a></li>
+      <li><a class="btn-floating yellow darken-1 " onclick="yellowbutton();"><i class="material-icons"></i></a></li>
+      <li><a class="btn-floating green" onclick="greenbutton();"><i class="material-icons"></i></a></li>
+      <li><a class="btn-floating blue" onclick="bluebutton();"><i class="material-icons"></i></a></li>
+    </ul>
+  </div>
+         
+
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
+  </html>
