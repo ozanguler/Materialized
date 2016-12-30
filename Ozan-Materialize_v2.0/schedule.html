@@ -26,7 +26,25 @@
         </div>
       </nav>
     </div>
-
+      <!-- side nav -->
+    <ul id="slide-out" class="side-nav">
+      <li>
+        <p style="padding-left: 10px;">Subject:</p>
+        <input type="input-field">
+      </li>
+      <li>
+        <p style="padding-left: 10px;">Monday:</p>
+        <button onclick="asure()">14:00-14:50</button>
+        <button onclick="asure()">15:00-15:50</button>
+      </li>
+      <li>
+        <p style="padding-left: 10px;">Wednesday:</p>
+        <button onclick="asure()">14:00-14:50</button>
+        <button onclick="asure()">15:00-15:50</button>
+      </li>
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse" style="position: fixed;"><i class="material-icons">menu</i></a>
+      <!-- side nav ends -->
     <div class="row" style="padding: 30px">
        <form>
         <div class="input-field col s6 push-s3" style="background-color: #ff8000">
@@ -34,18 +52,60 @@
           <label for="search autocomplete-input" style="background-color: #ff8000;"><i class="material-icons prefix" style="background-color: #ff8000; color: white">search</i></label>
         </div>
       </form>
-     </div>
+    </div>
 
-    <div class="row" style="padding: 10px;">
-     <div class="col s5" style="padding-left: 50px">    
-      <img src="img/ozan_schedule.png"/>
-     </div>
-     <div class="col s7" style="padding-left: 50px">
-      <img src="img/cemev.png"/>
-     </div>
+    <div class="row center-align">
+      <a href="schedule.html" style="background-color: #ff8000" class="waves-effect waves-orange btn center hoverable"><i class="large material-icons right">send</i>Search</a>    
+    </div>
+
+    
+      <div class="row">
+        <div class="col s2 push-s5">
+          <div id="situationpanel" class="card " style="background-color: #4caf50">
+            <div class="card-content white-text">
+              <span class="card-title" style="text-align: center;">Cem Evrendilek</span>
+              <h5 id="situation" style="text-align: center;" >available</h5>
+            </div>
+
+           
+          </div>
+        </div>
+      </div>
+
+    
+
+    <div style="text-align: center; padding-bottom: 50px; ">    
+      <img height="420" width="500" src="img/kemal.png"/>
+      <img height="420" width="500" src="img/cemev.png"/>
     </div>
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript">
+        var canvas = document.getElementById("circlecanvas");
+        var context = canvas.getContext("2d");
+        context.arc(10, 10, 10, 0, Math.PI * 2, false);
+        context.fillStyle = "green";
+        context.fill();
+      </script>
+      <script type="text/javascript">
+        $(".button-collapse").sideNav();
+      </script>
+      <script type="text/javascript">
+        function asure() 
+        {
+          var x;
+          if (confirm("Are you sure?") == true)
+          {
+            x = "You pressed OK!";
+          }
+          else
+          {
+            x = "You pressed Cancel!";
+          }
+          document.getElementById("demo").innerHTML = x;
+        }
+      </script>
+
     </body>
   </html>
